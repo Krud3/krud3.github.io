@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Para que funcione en internet explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se adapte a cualquier dispositivo -->
+    <title>Bootstrap 5 Menu Landing page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<!--Menu de la landing page-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="images\white.png" alt="Logo" style="width: 100px;"> 
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experiencias">Experiencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#modelos">Modelos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Buscar por PIN">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+</nav>
+
+
+<main>
+<!-- Carousel 2 -->
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('imagesModels/carousel/cq5dam.resized.img.1680.large.time1576663609772.jpg'); background-size: cover; background-position: center;">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="transparent"/></svg>
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Conduce con Estilo, Conduce un BMW</h1>
+          <p class="opacity-75">En Car Shop, te ayudamos a encontrar el BMW que se ajusta a tu estilo y necesidades. Explora nuestra extensa colección hoy.</p>
+          <!--p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p-->
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('imagesModels/carousel/cq5dam.resized.img.1680.large.time1627456607177.jpg'); background-size: cover; background-position: center;">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="transparent"/></svg>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Descubre la Experiencia BMW en Car Shop</h1>
+          <p>Desde modelos deportivos hasta elegantes sedanes, tenemos el BMW perfecto esperándote. Comienza tu viaje con nosotros.</p>
+          <!--p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p-->
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('imagesModels/carousel/cq5dam.resized.img.1680.large.time1631788897283.jpg'); background-size: cover; background-position: center;">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="transparent"/></svg>
+      <div class="container">
+          <div class="carousel-caption text-start">
+              <h1>Servicio Integral para tu BMW en Car Shop</h1>
+              <p class="opacity-75">No solo te ayudamos a encontrar tu próximo coche, sino que también ofrecemos servicios de mecánica experta y repuestos originales BMW.</p>
+              <!--p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p-->
+          </div>
+      </div>
+    </div>
+  
+  
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id="servicios"class="row">
+      <div class="col-lg-4">
+        <img src = "images/BMW M8.png" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></img>
+        <h2 class="fw-normal">Venta de vehiculos</h2>
+        <p>Un vehículo BMW de sus sueños pueden estar más cerca de lo que cree. Busque en nuestra red de Sedes BMW la ubicación más cercana a usted.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src = "images/repuestos-autos-2.png" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></img>
+        <h2 class="fw-normal">Venta de Repuestos</h2>
+        <p>Contamos con un amplio portafolio de repuestos para tu vehiculo BMW .</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src = "images/mecanicos.png" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></img>
+        <h2 class="fw-normal">Mantenimiento de vehiculos</h2>
+        <p>Somos los mejores en matenimiento preventivo y correctivo para tu BMW. Dirigete a la sede mas cercana para que tu BMW quede como nuevo.</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <p class = "text-center"><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+
+
+    <!-- START THE EXPERIENCIAS -->
+
+    <hr class="featurette-divider">
+    <!--Experiencia 1-->
+    <div class="row featurette">
+      <div id = "experiencias" class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Carmen Linares <span class="text-body-secondary">Cali Colombia</span></h2>
+        <p class="lead">"Mi experiencia con Car Shop ha sido fenomenal tanto en la compra de mi BMW Serie 3 como en el servicio postventa. Recientemente llevé mi coche para una revisión y el servicio mecánico fue eficiente y transparente en todo momento. Además, adquirí algunos accesorios originales en su sección de repuestos a precios justos. ¡Todo en un solo lugar!"</p>
+      </div>
+      <div class="col-md-5">
+        
+        <img src = "images/carmen.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></img>
+        
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!--Experiencia 2-->
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Orlando Luna <span class="text-body-secondary">Barranquilla Colombia</span></h2>
+        <p class="lead">"Car Shop no solo me ofreció una variedad impresionante de coches BMW para elegir, sino que también me proporcionó asesoramiento experto cuando necesitaba repuestos para mi modelo antiguo. Es genial tener un concesionario que no solo te vende un coche, sino que también te apoya durante toda la vida útil del vehículo con un excelente servicio mecánico y repuestos de calidad."</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src = "images/laura.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></img>
+       </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!--Experiencia 3-->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Cristian Duarte <span class="text-body-secondary">Pasto Colombia</span></h2>
+        <p class="lead">"Desde la compra de mi BMW en Car Shop, siempre he vuelto para el mantenimiento y cualquier reparación que necesite. El equipo de mecánicos es de primera clase y siempre encuentran la solución perfecta para cualquier inconveniente. Además, siempre tienen los repuestos originales que necesito. ¡Es un servicio completo que me da tranquilidad!"</p>
+      </div>
+      <div class="col-md-5">
+        
+        <img src = "images/carlos.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></img>
+       </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+  <!--Acordeon Modelos-->
+  <div id="modelos" class="container text-center">
+    <h1>Modelos</h2>
+  </div>
+  <div class="container mt-3">
+    <h2>BMW X</h2>
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Ver modelos</button>
+    <div id="demo" class="collapse">
+      <section class="modelos">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="secction-header text-center pb-5">
+                        <h2>Modelos X </h2>
+                        <p>
+                            Contamos con unos excelentes vehiculos Modelos X BMW.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_15.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW XM 2024 <br> Desde $ 999.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_20.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X7 2024 <br> Desde $ 479.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_25.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X6 2024 <br> Desde $ 369.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_30.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X5 2024 <br> Desde $ 389.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_35.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X5 M 2024 <br> Desde $ 319.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_40.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X4 2024 <br> Desde $ 279.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_45.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X3 2024 <br> Desde $ 259.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_50.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X3 M 2024 <br> Desde $ 409.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_55.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X2 2024 <br> Desde $ 199.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_60.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X1 2024 <br> Desde $ 234.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_65.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW iX 2024 Electrico <br> Desde $ 459.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwx\image_70.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW iX3 Electrico 2024 <br> Desde $ 349.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+    </div>
+  </div>
+  <!-- Modelos M-->
+  <div class="container mt-3">
+    <h2>BMW M</h2>
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo2">Ver modelos</button>
+    <div id="demo2" class="collapse">
+      <section class="modelos">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="secction-header text-center pb-5">
+                        <h2>Modelos M </h2>
+                        <p>
+                            Contamos con unos excelentes vehiculos Modelos M BMW.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_81.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p> BMW X6 M60i 2024 <br> desde $ 569.900.000  
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_86.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p> BMW X6 M50i 2024 <br> Desde $ 459.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_76.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW XM 2024 <br> Desde $ 999.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_91.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X5 M60i xDrive 2024 <br> Desde $ 539.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_96.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X5 M50i 2024 <br> Desde $ 419.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_101.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X4 M40i 2024 <br> Desde $ 379.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_106.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X3 M40i 2023 <br> Desde $ 319.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="bmwm/image_111.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW X2 M35i 2024 <br> Desde $ 239.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_116.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M550i xDrive Sedan 2024 <br> Desde $ 379.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_121.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M440i xDrive Gran Coupe 2024 <br> Desde $ 279.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_126.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M4 Coupe Competicion 2024 <br> Desde $ 529.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_131.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M4 Coupe Competicion 2024 <br> Desde $ 279.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_136.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M440i Coupe 2024 <br> Desde $ 249.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_141.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M3 Compticion Sedan 2024 <br> Desde $ 389.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_146.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M3 Competicion 2024 <br> Desde $ 679.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_151.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW M235i xDrive Gran Coupe 2024 <br> Desde $ 212.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwm\image_156.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p>BMW Z4 M40i 2024 <br> Desde $ 329.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Modelos Serie i-->
+  <div class="container mt-3">
+    <h2>BMW i</h2>
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo3">Ver modelos</button>
+    <div id="demo3" class="collapse">
+      <section class="modelos">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="secction-header text-center pb-5">
+                        <h2>Modelos i</h2>
+                        <p>
+                            Contamos con unos excelentes vehiculos Modelos i BMW.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwi\image_4.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p> BMW iX Electrico 2024 <br> desde $ 459.900.000  
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 ">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 md-4">
+                        <div class="text-center">
+                            <img src="imagesModels\modelsView\bmwi\image_9.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tilte">Modelo</h5>
+                            <p> BMW iX3 2024 <br> Desde $ 349.900.000
+                            </p>
+                            <a href="#" class="btn btn-danger">Saber Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+  </div>
+
+
+  <!--footer-->
+  <footer class="bg-ligh  text-dark pt-5 pb-4">
+    <div id="footer" class="container-fluid text-center text-md-start p-3 mb-2 bg-dark text-white" > 
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Consecioario</h5>
+                <hr class="mb-4">
+                <p>
+                    <a href="#" class="text-light">Mantenimiento de tu vehiculo</a>
+                </p>
+                <p>
+                    <a href="#" class="text-light">Venta de vehiculos</a>
+                </p>
+                <p>
+                    <a href="#" class="text-light">Venta de Repuestos</a>
+                </p>
+                <p>
+                    <a href="#" class="text-light">Ayuda</a>
+                </p>
+
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Nuestras Sedes</h5>
+                <hr class="mb-4">
+                <p>
+                    <li class="fas fa-home me-3"></li><a href="https://maps.app.goo.gl/BsucrqKfFc5WrRw19" class="text-light">B/Lopez Carrera 32 #12-22</a>
+                </p>
+                <p>
+                    <li class="fas fa-home me-3"></li><a href="https://maps.app.goo.gl/DJoGskfaEEbrF9zG7" class="text-light">B/ciudadjardinCarrera 24 #45-65</a>
+                </p>
+                <p>
+                    <li class="fas fa-home me-3"></li><a href="https://maps.app.goo.gl/WpkCuSYsKEbv5rCt6" class="text-light">B/Morichal Carrera 54 #68-27</a>
+                </p>
+                <p>
+                    <li class="fas fa-home me-3"></li><a href="https://maps.app.goo.gl/281bD1LWi7Zf8jyh7" class="text-light">B/Caney Carrera 10 #18-34</a>
+                </p>
+
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contacto</h5>
+                <hr class="mb-4">
+                <p>
+                    
+                    <li class="fas fa-phone me-3"></li><a href="#" class="text-light">Principal 01800911456</a>
+                </p>
+
+                <p>
+                    <li class="fas fa-envelope me-3"></li><a href="#" class="text-light">Email</a>
+                </p>
+                <p>
+                    <i class="fab fa-whatsapp "></i><a href="https://wa.link/7mehpp" class="text-light"> +57 3128601430</a>
+
+                </p>
+                <p>
+                    <li class="fas fa-print me-3"></li><a href="#" class="text-light">1-125697453</a>
+                </p>
+               
+
+            </div>
+
+            <hr class="mb-4">
+            <div class="text-center mb-2">
+                <p>
+                    copyright todos los derechos reservados
+                    <a href="#">
+                        <strong class="text-danger">Test</strong>
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="text-center">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/BMW.Colombia" class="text-light"> <i class="fab fa-facebook"></i></a> 
+
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/bmwcolombia?lang=es" class="text-light"> <i class="fab fa-twitter"></i></a> 
+
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light"> <i class="fab fa-google-plus"></i></a> 
+
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com/@bmwcolombia5576/about" class="text-light"> <i class="fab fa-youtube"></i></a> 
+
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/bmw.colombia/?hl=es" class="text-light"> <i class="fab fa-instagram"></i></a> 
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+
+  </footer>
+  <!-- Boton contacto-->
+  <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+    <div class="wcs_button_label">
+            Contáctanos
+        </div>  
+    <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+    </div>  
+ 
+    <div class="wcs_popup">
+        <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+            <span class="fa fa-whatsapp"></span>
+            <strong>Servicio al cliente</strong>
+            
+            <div class="wcs_popup_header_description">¿Necesidad de ayuda? Chatea con nosotros en Whatsapp</div>
+
+        </div>  
+        <div class="wcs_popup_input" 
+            data-number="3128601430">
+            <input type="text" placeholder="Escribir pregunta!" />
+            <i class="fa fa-play"></i>
+        </div>
+    </div>
+  </div>
+
+
+      <!-- jQuery-->
+  <script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+  <!-- Plugin JS -->
+  <script src="plugin/components/moment/moment.min.js"></script>
+  <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+  <script src="plugin/whatsapp-chat-support.js"></script>
+  <script>
+  $('#button-w').whatsappChatSupport({
+      defaultMsg : '',
+  });
+  </script> 
+</main>
+</body>
+</html>

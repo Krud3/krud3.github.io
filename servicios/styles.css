@@ -1,0 +1,27 @@
+.Servicios{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    
+
+
+}
+.card-group .card{
+    box-shadow: 4px 0px 15px black;
+}
+
+
+.card-group {
+margin: 0 auto important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'alfa slab one', cursive;
+    text-transform: uppercase;
+}
+.card-img-top{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
